@@ -1,7 +1,10 @@
+
 ---
 import GitHub from "@/icons/GitHub.astro";
 import Section from "../Section.astro";
-import { projects } from "@cv";
+import projectsData from "@cv"; // Change the import to a named import if necessary
+
+// Define the Project interface to ensure data consistency
 interface Project {
   url: string; // Ensure this is always defined
   description: string;
@@ -10,17 +13,20 @@ interface Project {
   isActive: boolean;
   github?: string; // Optional property
 }
+
+// Ensure that the imported projects conform to the Project interface
+const projects: Project[] = projectsData.projects || []; // Adjust based on how your data is structured
 ---
 
 <Section title="Proyectos">
   <ul>
     {
       projects.map(
-        (project: Project) => {
+        (project) => {
           const { url, description, highlights, name, isActive, github } = project;
 
           return (
-            <li>
+            <li key={name}> {/* Added a unique key for each project */}
               <article>
                 <header>
                   <h3>
@@ -54,6 +60,11 @@ interface Project {
     }
   </ul>
 </Section>
+
+
+
+------
+
 <style>
   ul {
     display: grid;
