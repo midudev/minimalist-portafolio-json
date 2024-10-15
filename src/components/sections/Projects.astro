@@ -1,17 +1,25 @@
 ---
-import GitHub from "@/icons/GitHub.astro"
-import Section from "../Section.astro"
-
-import { projects } from "@cv"
+import GitHub from "@/icons/GitHub.astro";
+import Section from "../Section.astro";
+import { projects } from "@cv"; // Import projects directly
 ---
 
 <Section title="Projects">
   <ul>
     {
-      projects.map(
-        ({ url, description, highlights, name, isActive, github }) => {
+      projects.map((project) => {
+          // Destructure the project attributes
+          const { url, description, highlights, name, isActive, github } = project as {
+            url: string; // Explicitly assert the type of project
+            description: string;
+            highlights: string[];
+            name: string;
+            isActive: boolean;
+            github?: string; // Optional
+          };
+
           return (
-            <li>
+            <li key={name}> {/* Use key for the list item */}
               <article>
                 <header>
                   <h3>
@@ -33,18 +41,22 @@ import { projects } from "@cv"
                   <p>{description}</p>
                 </header>
                 <footer>
-                  {highlights.map((highlight) => {
-                    return <span>{highlight}</span>
-                  })}
+                  {highlights.map((highlight, index) => (
+                    <span key={index}>{highlight}</span> // Correctly using key for highlights
+                  ))}
                 </footer>
               </article>
             </li>
-          )
+          );
         }
       )
     }
   </ul>
 </Section>
+
+
+
+------
 
 <style>
 
@@ -67,7 +79,7 @@ span {
 
   article {
     border-radius: 8px;
-    border: 1px solid #f2f2f2;
+    border: 1px solid #f2f2f2; /* Ensure border is defined */
     gap: 16px;
     display: flex;
     flex-direction: column;
