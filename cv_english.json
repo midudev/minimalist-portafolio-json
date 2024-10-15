@@ -222,7 +222,8 @@
         "Developed the entire system from scratch.",
         "Incorporated QR codes and barcodes for tracking."
       ],
-      "url": "https://www.packexpress.com.uy"
+      "url": "https://www.packexpress.com.uy",
+      "github": "https://github.com/example/packexpress" // Change to actual GitHub URL if available
     },
     {
       "name": "ECOMAVI Web Development",
@@ -231,7 +232,9 @@
       "highlights": [
         "Reduced website load times by 40%.",
         "Improved network security."
-      ]
+      ],
+      "url": "https://www.ecomavi.com",
+      "github": "https://github.com/example/ecomavi" // Change to actual GitHub URL if available
     }
   ]
 }
