@@ -20,7 +20,7 @@ interface Project {
           const { url, description, highlights, name, isActive, github } = project;
 
           return (
-            <li key={name}> {/* Ensure name is unique */}
+            <li key={name}> {/* key is added here for the <li> element */}
               <article>
                 <header>
                   <h3>
@@ -43,7 +43,7 @@ interface Project {
                 </header>
                 <footer>
                   {highlights.map((highlight, index) => (
-                    <span key={index}>{highlight}</span> // Ensure this key is used properly
+                    <span key={index}>{highlight}</span> // key is correctly used here
                   ))}
                 </footer>
               </article>
