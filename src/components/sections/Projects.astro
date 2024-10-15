@@ -1,26 +1,25 @@
 ---
 import GitHub from "@/icons/GitHub.astro";
 import Section from "../Section.astro";
-import { projects } from "@cv"; // Ensure you're importing the correct data
-
-interface Project {
-  url: string; // This should always be defined
-  description: string;
-  highlights: string[];
-  name: string;
-  isActive: boolean;
-  github?: string; // Make this optional
-}
+import { projects } from "@cv"; // Import projects directly
 ---
 
 <Section title="Proyectos">
   <ul>
     {
-      projects.map((project: Project) => {
-          const { url, description, highlights, name, isActive, github } = project;
+      projects.map((project) => {
+          // Destructure the project attributes
+          const { url, description, highlights, name, isActive, github } = project as {
+            url: string; // Explicitly assert the type of project
+            description: string;
+            highlights: string[];
+            name: string;
+            isActive: boolean;
+            github?: string; // Optional
+          };
 
           return (
-            <li key={name}> {/* key is added here for the <li> element */}
+            <li key={name}> {/* Use key for the list item */}
               <article>
                 <header>
                   <h3>
@@ -43,7 +42,7 @@ interface Project {
                 </header>
                 <footer>
                   {highlights.map((highlight, index) => (
-                    <span key={index}>{highlight}</span> // key is correctly used here
+                    <span key={index}>{highlight}</span> // Correctly using key for highlights
                   ))}
                 </footer>
               </article>
@@ -54,6 +53,9 @@ interface Project {
     }
   </ul>
 </Section>
+
+
+
 ------
 
 <style>
