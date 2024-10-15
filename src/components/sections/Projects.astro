@@ -2,9 +2,9 @@
 ---
 import GitHub from "@/icons/GitHub.astro";
 import Section from "../Section.astro";
-import projectsData from "@cv"; // Change the import to a named import if necessary
-----
----
+import { projects } from "@cv"; // Directly import the projects array from the cv data
+
+// Define the Project interface to ensure data consistency
 interface Project {
   url: string; // This should always be defined
   description: string;
@@ -13,16 +13,13 @@ interface Project {
   isActive: boolean;
   github?: string; // Make this optional
 }
-
-// Use type assertion to ensure TypeScript recognizes the shape of the projects
-const projects: Project[] = projectsData.projects as Project[] || []; // Using 'as Project[]' for type assertion
 ---
 
 <Section title="Proyectos">
   <ul>
     {
       projects.map(
-        (project) => {
+        (project: Project) => {
           const { url, description, highlights, name, isActive, github } = project;
 
           return (
