@@ -5,22 +5,20 @@ import Section from "../Section.astro";
 import { projects } from "@cv";
 ------
 
-interface Project {
-  url: string;
-  description: string;
-  highlights: string[];
-  name: string;
-  isActive: boolean;
-  github?: string; // Make github optional
-}
----
-
 <Section title="Proyectos">
   <ul>
     {
       projects.map(
-        (project: Project) => {
-          const { url, description, highlights, name, isActive, github } = project;
+        (project) => {
+          // Define the type of 'project' inline to avoid the 'Cannot find name' error
+          const { url, description, highlights, name, isActive, github }: {
+            url: string;
+            description: string;
+            highlights: string[];
+            name: string;
+            isActive: boolean;
+            github?: string; // Make github optional
+          } = project;
 
           return (
             <li>
@@ -57,7 +55,6 @@ interface Project {
     }
   </ul>
 </Section>
-
 
 
 <style>
