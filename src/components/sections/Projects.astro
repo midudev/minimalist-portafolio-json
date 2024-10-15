@@ -1,16 +1,14 @@
 ---
-// Importing necessary components and data
 import GitHub from "@/icons/GitHub.astro";
 import Section from "../Section.astro";
 import { projects } from "@cv";
-------
+---
 
 <Section title="Proyectos">
   <ul>
     {
       projects.map(
         (project) => {
-          // Define the type of 'project' inline to avoid the 'Cannot find name' error
           const { url, description, highlights, name, isActive, github }: {
             url: string;
             description: string;
@@ -56,7 +54,6 @@ import { projects } from "@cv";
   </ul>
 </Section>
 
-
 <style>
   ul {
     display: grid;
@@ -67,7 +64,7 @@ import { projects } from "@cv";
 
   article {
     border-radius: 8px;
-    border: 1px solid #f2f2f2;
+    border: 1px solid #f2f2f2; /* Ensure border is defined */
     gap: 16px;
     display: flex;
     flex-direction: column;
