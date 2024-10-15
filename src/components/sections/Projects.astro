@@ -1,15 +1,22 @@
 ---
-import GitHub from "@/icons/GitHub.astro"
-import Section from "../Section.astro"
-
-import { projects } from "@cv"
+// Importing necessary components and data
+import GitHub from "@/icons/GitHub.astro";
+import Section from "../Section.astro";
+import { projects } from "@cv";
 ---
 
 <Section title="Proyectos">
   <ul>
     {
       projects.map(
-        ({ url, description, highlights, name, isActive, github }) => {
+        ({ url, description, highlights, name, isActive, github }: {
+          url: string;
+          description: string;
+          highlights: string[];
+          name: string;
+          isActive: boolean;
+          github?: string; // Mark github as optional
+        }) => {
           return (
             <li>
               <article>
