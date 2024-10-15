@@ -5,21 +5,24 @@ import Section from "../Section.astro";
 import { projects } from "@cv";
 ---
 
+
+interface Project {
+  url: string;
+  description: string;
+  highlights: string[];
+  name: string;
+  isActive: boolean;
+  github?: string; // Make github optional
+}
 ---
 
 <Section title="Proyectos">
   <ul>
     {
       projects.map(
-        (project) => {
-          const { url, description, highlights, name, isActive, github }: {
-            url: string;
-            description: string;
-            highlights: string[];
-            name: string;
-            isActive: boolean;
-            github?: string; // Mark github as optional
-          } = project;
+        (project: Project) => {
+          // Now we can destructure safely
+          const { url, description, highlights, name, isActive, github } = project;
 
           return (
             <li>
@@ -44,19 +47,18 @@ import { projects } from "@cv";
                   <p>{description}</p>
                 </header>
                 <footer>
-                  {highlights.map((highlight) => {
-                    return <span>{highlight}</span>;
+                  {highlights.map((highlight, index) => {
+                    return <span key={index}>{highlight}</span>; // Added key for uniqueness
                   })}
                 </footer>
               </article>
             </li>
-          )
+          );
         }
       )
     }
   </ul>
 </Section>
-
 
 
 
