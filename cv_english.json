@@ -1,275 +1,237 @@
 {
   "basics": {
-    "name": "Miguel Ángel Durán",
-    "label": "Full-Stack developer with more than 15 years of experience & development content creator",
+    "name": "Yocxy De la Cruz Miguez",
+    "label": "Computer Science Engineer",
     "image": "/me.webp",
-    "email": "miduga@gmail.com",
-    "phone": "+34 688888888",
-    "url": "https://midu.dev",
-    "summary": "+15 years of experience as a web developer. Currently I am a content creator and development dommunicator. I live in Barcelona, Spain. I have worked in different environments: from accelerating the development of start-ups to leading teams in multinational companies.",
+    "email": "rilkemobile85@gmail.com",
+    "phone": "+598 98051040",
+    "url": "https://www.linkedin.com/in/yocxy",
+    "summary": "Computer Science Engineer with experience in software development, network administration, and economic systems. Skilled in technologies such as Java, ASP.NET, C#, PHP, SQL, and more. Experience working with multinational and local companies. Certified in AWS and highly skilled in database management and IT security.",
     "location": {
-      "address": "",
-      "postalCode": "08820",
-      "city": "el Prat de Llobregat",
-      "countryCode": "ES",
-      "region": "Spain"
+      "address": "Calle Nicaragua 1859 barrio Centro",
+      "postalCode": "11000",
+      "city": "Montevideo",
+      "countryCode": "UY",
+      "region": "Uruguay"
     },
     "profiles": [
       {
         "network": "LinkedIn",
-        "username": "midudev",
-        "url": "https://linkedin.com/in/midudev"
-      },
-      {
-        "network": "X",
-        "username": "midudev",
-        "url": "https://x.com/midudev"
-      },
-      {
-        "network": "GitHub",
-        "username": "midudev",
-        "url": "https://github.com/midudev"
+        "username": "yocxy",
+        "url": "https://www.linkedin.com/in/yocxy"
       }
     ]
   },
   "work": [
     {
-      "name": "midudev",
-      "position": "Web programming communicator",
-      "url": "https://twitch.tv/midudev",
-      "startDate": "2021-01-01",
-      "endDate": null,
-      "summary": "Most watched development streamer in Spanish on Twitch. +1 million followers across all my social networks. Recognised by Google, Microsoft and GitHub for my impact on the development community.",
+      "name": "PackExpress Uruguay SAS",
+      "position": "CRM ERP and Company Administration",
+      "url": "https://www.packexpress.com.uy",
+      "startDate": "2023-05-01",
+      "endDate": "2023-10-01",
+      "summary": "Managed hosting servers, developed websites and an online store, handled banking accounts, and developed the invoicing system in ASP.NET C#, PHP, and JavaScript with barcodes and QR codes.",
       "highlights": [
-        "Started the company"
+        "Developed web applications using ASP.NET C#.",
+        "Implemented an invoicing system with QR and barcodes.",
+        "Optimized existing applications."
       ]
     },
     {
-      "name": "Adevinta",
-      "position": "Lead Frontend Architect",
-      "url": "https://twitch.tv/midudev",
-      "startDate": "2016-06-01",
-      "endDate": "2022-09-01",
-      "summary": "I led a technical convergence between different products and migrated from a monolithic architecture to a more flexible and optimised one. I fostered best practices and performance culture improvements, as well as rapid delivery of value to users.",
+      "name": "BSU Embajada de Brasil Mercosur",
+      "position": "CCTV IPTV Monitoring and Security",
+      "startDate": "2021-09-01",
+      "endDate": "2023-05-01",
+      "summary": "Supervised and managed monitoring and security systems for the Brazilian Embassy.",
       "highlights": [
-        "Started the company"
+        "Implemented and maintained CCTV systems."
       ]
     },
     {
-      "name": "Hubii",
-      "position": "Senior FrontEnd Developer",
-      "startDate": "2011-03-01",
-      "endDate": "2016-05-01",
-      "summary": "I developed a geolocated news platform and an API to consume the information. Scaled services to support the load of over hundreds of thousands of requests per day. Cut delivery times and deployments to production by half. Collaborated with Mozilla and Telefónica to develop the first FirefoxOS TV app.",
+      "name": "Limport Montevideo",
+      "position": "CCTV IPTV Monitoring and Security",
+      "startDate": "2021-03-01",
+      "endDate": "2021-08-01",
+      "summary": "Installed and maintained monitoring and security equipment.",
       "highlights": [
-        "Started the company"
+        "Managed security equipment for large companies."
+      ]
+    },
+    {
+      "name": "Emgef Matanzas",
+      "position": "Computer Science Specialist",
+      "startDate": "2016-03-01",
+      "endDate": "2018-01-01",
+      "summary": "Network administrator and software developer with experience in SQL and economic systems. Completed Cisco CND and Networking courses.",
+      "highlights": [
+        "Developed SQL-based systems for economic sectors."
+      ]
+    },
+    {
+      "name": "ECOMAVI Matanzas",
+      "position": "Web Developer and Network Administrator",
+      "startDate": "2013-01-01",
+      "endDate": "2015-12-01",
+      "summary": "Developed websites and maintained hardware. Network administration and SQL system management.",
+      "highlights": [
+        "Maintained systems and developed web applications."
+      ]
+    },
+    {
+      "name": "Universidad Camilos Cienfuegos Matanzas",
+      "position": "Calculus Instructor",
+      "startDate": "2013-01-01",
+      "endDate": "2015-12-01",
+      "summary": "Taught Calculus 4 to future computer and mechanical engineers. Trained in research methodology.",
+      "highlights": [
+        "Trained future engineers in advanced calculus."
+      ]
+    },
+    {
+      "name": "Banco Central de Cuba Matanzas",
+      "position": "Computer Science Specialist and Accounting Auditor",
+      "startDate": "2008-09-01",
+      "endDate": "2010-09-01",
+      "summary": "Audited bank accounts and managed SQL databases for ATM systems.",
+      "highlights": [
+        "Implemented the SABIC banking system in Cuba."
       ]
     }
   ],
-  "volunteer": [{
-    "organization": "Organization",
-    "position": "Volunteer",
-    "url": "https://organization.com/",
-    "startDate": "2012-01-01",
-    "endDate": "2013-01-01",
-    "summary": "Description…",
-    "highlights": [
-      "Awarded 'Volunteer of the Month'"
-    ]
-  }],
-  "education": [{
-    "institution": "Universitat Oberta de Catalunya",
-    "url": "https://www.uoc.edu/portal/es/index.html",
-    "area": "Software Engineer",
-    "studyType": "Bachelor",
-    "startDate": "2003-01-01",
-    "endDate": "2009-01-01",
-    "score": "4.0",
-    "courses": [
-      "DB1101 - Basic SQL"
-    ]
-  }],
-  "awards": [{
-    "title": "Award",
-    "date": "2014-11-01",
-    "awarder": "Company",
-    "summary": "There is no spoon."
-  }],
-  "certificates": [{
-    "name": "Certificate",
-    "date": "2021-11-07",
-    "issuer": "Company",
-    "url": "https://certificate.com"
-  }],
-  "publications": [{
-    "name": "Publication",
-    "publisher": "Company",
-    "releaseDate": "2014-10-01",
-    "url": "https://publication.com",
-    "summary": "Description…"
-  }],
+  "education": [
+    {
+      "institution": "Universidad de las Ciencias Informáticas Habana",
+      "url": "https://www.uci.cu/",
+      "area": "Computer Science Engineering",
+      "studyType": "Bachelor",
+      "startDate": "2003-09-01",
+      "endDate": "2008-07-01",
+      "score": "4.0",
+      "courses": [
+        "Database systems and teleinformatics",
+        "Oracle Suite and Requisit Pro database projects"
+      ]
+    }
+  ],
+  "certificates": [
+    {
+      "name": "AWS Developer, Architect & DevOps",
+      "date": "2023-01-01",
+      "issuer": "Udemy",
+      "url": "https://www.udemy.com"
+    },
+    {
+      "name": "Cisco CND",
+      "date": "2016-01-01",
+      "issuer": "Hyundai Habana",
+      "url": "https://www.cisco.com"
+    }
+  ],
   "skills": [
     {
-      "name": "HTML",
-      "level": "Master",
-      "keywords": [
-        "Web development", "Frontend"
-      ]
-    },
-    {
-      "name": "CSS",
-      "level": "Master",
-      "keywords": [
-        "Web development", "Frontend", "Diseño Responsive"
-      ]
-    },
-    {
-      "name": "JavaScript",
-      "level": "Master",
-      "keywords": [
-        "Web development", "Frontend", "Backend", "Fullstack"
-      ]
-    },
-    {
-      "name": "Tailwind",
+      "name": "Java",
       "level": "Advanced",
       "keywords": [
-        "Web development", "Frontend", "CSS Framework", "Diseño Responsive"
+        "Backend", "Web Development"
       ]
     },
     {
-      "name": "TypeScript",
+      "name": "ASP.NET",
       "level": "Advanced",
       "keywords": [
-        "Web development", "Frontend", "Backend", "JavaScript Superset"
+        "Web Development", "Backend"
       ]
     },
     {
-      "name": "Node",
+      "name": "C#",
       "level": "Advanced",
       "keywords": [
-        "Web development", "Backend", "JavaScript", "Servidor"
+        "Web Development", "Backend"
+      ]
+    },
+    {
+      "name": "PHP",
+      "level": "Advanced",
+      "keywords": [
+        "Web Development", "Backend"
+      ]
+    },
+    {
+      "name": "SQL",
+      "level": "Advanced",
+      "keywords": [
+        "Databases", "Backend"
       ]
     },
     {
       "name": "MySQL",
       "level": "Advanced",
       "keywords": [
-        "Bases de Datos", "SQL", "Database", "Backend"
+        "Databases"
+      ]
+    },
+    {
+      "name": "PostgreSQL",
+      "level": "Intermediate",
+      "keywords": [
+        "Databases"
       ]
     },
     {
       "name": "Git",
       "level": "Advanced",
       "keywords": [
-        "Version control", "Colaboración", "Source code"
+        "Version Control", "Collaboration"
       ]
     },
     {
-      "name": "GitHub",
-      "level": "Advanced",
+      "name": "AWS",
+      "level": "Certified",
       "keywords": [
-        "Version control", "Collaboration", "Source code", "Git"
-      ]
-    },
-    {
-      "name": "Next.js",
-      "level": "Advanced",
-      "keywords": [
-        "Web development", "Frontend", "React Framework", "SSR", "Static Generation"
-      ]
-    },
-    {
-      "name": "React",
-      "level": "Advanced",
-      "keywords": [
-        "Web development", "Frontend", "JavaScript Library", "UI"
+        "Cloud", "DevOps"
       ]
     }
   ],
   "languages": [
     {
       "language": "Spanish",
-      "fluency": "Native speaker"
+      "fluency": "Native"
     },
     {
       "language": "English",
       "fluency": "Advanced"
+    },
+    {
+      "language": "French",
+      "fluency": "Advanced"
+    },
+    {
+      "language": "Portuguese",
+      "fluency": "Basic"
+    },
+    {
+      "language": "German",
+      "fluency": "Intermediate"
     }
   ],
-  "interests": [{
-    "name": "Wildlife",
-    "keywords": [
-      "Ferrets",
-      "Unicorns"
-    ]
-  }],
-  "references": [{
-    "name": "Jane Doe",
-    "reference": "Reference…"
-  }],
   "projects": [
     {
-      "name": "mars.codes",
+      "name": "PackExpress System",
       "isActive": true,
-      "description": "Interactive story with programming challenges to travel to Mars",
+      "description": "An invoicing and delivery system using ASP.NET, C#, and barcodes.",
       "highlights": [
-        "Choose your own adventure",
-        "In progress"
+        "Developed the entire system from scratch.",
+        "Incorporated QR codes and barcodes for tracking."
       ],
-      "url": "https://mars.codes"
+      "url": "https://www.packexpress.com.uy"
     },
     {
-      "name": "AdventJS",
+      "name": "ECOMAVI Web Development",
       "isActive": true,
-      "description": "JavaScript programming challenges for every day of December until Christmas",
+      "description": "Developed websites and managed network systems for ECOMAVI.",
       "highlights": [
-        "+1 million visits",
-        "Multilanguage",
-        "JavaScript & TypeScript"
-      ],
-      "url": "https://advent.js/dev"
-    },
-    {
-      "name": "Codember",
-      "isActive": true,
-      "description": "Interactive programming game with challenges and secrets",
-      "highlights": [
-        "+2000 active users",
-        "Challenges for any language"
-      ],
-      "url": "https://codember.dev"
-    },
-    {
-      "name": "codi.link",
-      "isActive": true,
-      "description": "Playground of HTML, CSS and JavaScript code for sharing",
-      "highlights": [
-        "100k monthly visit",
-        "Developed by the community"
-      ],
-      "url": "https://codi.link",
-      "github": "https://github.com/midudev/codi.link"
-    },
-    {
-      "name": "Pruebas Técnicas",
-      "isActive": true,
-      "description": "List of technical tests of companies to practice programming",
-      "highlights": [
-        "100% free",
-        "+500 community solutions"
-      ],
-      "url": "https://pruebastecnicas.com",
-      "github": "https://github.com/midudev/pruebas-tecnicas"
-    },
-    {
-      "name": "miduConf",
-      "description": "Streaming programming conference for the Spanish-speaking community with top talks",
-      "highlights": [
-        "+15k tickets handed over",
-        "+50k live viewers"
-      ],
-      "url": "https://miduconf.com"
+        "Reduced website load times by 40%.",
+        "Improved network security."
+      ]
     }
   ]
 }
