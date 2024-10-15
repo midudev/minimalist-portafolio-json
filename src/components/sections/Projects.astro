@@ -3,19 +3,19 @@
 import GitHub from "@/icons/GitHub.astro";
 import Section from "../Section.astro";
 import projectsData from "@cv"; // Change the import to a named import if necessary
-
-// Define the Project interface to ensure data consistency
+----
+---
 interface Project {
-  url: string; // Ensure this is always defined
+  url: string; // This should always be defined
   description: string;
   highlights: string[];
   name: string;
   isActive: boolean;
-  github?: string; // Optional property
+  github?: string; // Make this optional
 }
 
-// Ensure that the imported projects conform to the Project interface
-const projects: Project[] = projectsData.projects || []; // Adjust based on how your data is structured
+// Use type assertion to ensure TypeScript recognizes the shape of the projects
+const projects: Project[] = projectsData.projects as Project[] || []; // Using 'as Project[]' for type assertion
 ---
 
 <Section title="Proyectos">
@@ -26,7 +26,7 @@ const projects: Project[] = projectsData.projects || []; // Adjust based on how 
           const { url, description, highlights, name, isActive, github } = project;
 
           return (
-            <li key={name}> {/* Added a unique key for each project */}
+            <li key={name}> {/* Ensure name is unique */}
               <article>
                 <header>
                   <h3>
@@ -60,7 +60,6 @@ const projects: Project[] = projectsData.projects || []; // Adjust based on how 
     }
   </ul>
 </Section>
-
 
 
 ------
