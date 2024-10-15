@@ -1,10 +1,8 @@
-
 ---
 import GitHub from "@/icons/GitHub.astro";
 import Section from "../Section.astro";
-import { projects } from "@cv"; // Directly import the projects array from the cv data
+import { projects } from "@cv"; // Ensure you're importing the correct data
 
-// Define the Project interface to ensure data consistency
 interface Project {
   url: string; // This should always be defined
   description: string;
@@ -18,8 +16,7 @@ interface Project {
 <Section title="Proyectos">
   <ul>
     {
-      projects.map(
-        (project: Project) => {
+      projects.map((project: Project) => {
           const { url, description, highlights, name, isActive, github } = project;
 
           return (
@@ -46,7 +43,7 @@ interface Project {
                 </header>
                 <footer>
                   {highlights.map((highlight, index) => (
-                    <span key={index}>{highlight}</span>
+                    <span key={index}>{highlight}</span> // Ensure this key is used properly
                   ))}
                 </footer>
               </article>
@@ -57,8 +54,6 @@ interface Project {
     }
   </ul>
 </Section>
-
-
 ------
 
 <style>
