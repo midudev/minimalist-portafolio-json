@@ -3,8 +3,7 @@
 import GitHub from "@/icons/GitHub.astro";
 import Section from "../Section.astro";
 import { projects } from "@cv";
----
-
+------
 
 interface Project {
   url: string;
@@ -21,7 +20,6 @@ interface Project {
     {
       projects.map(
         (project: Project) => {
-          // Now we can destructure safely
           const { url, description, highlights, name, isActive, github } = project;
 
           return (
@@ -47,9 +45,9 @@ interface Project {
                   <p>{description}</p>
                 </header>
                 <footer>
-                  {highlights.map((highlight, index) => {
-                    return <span key={index}>{highlight}</span>; // Added key for uniqueness
-                  })}
+                  {highlights.map((highlight, index) => (
+                    <span key={index}>{highlight}</span>
+                  ))}
                 </footer>
               </article>
             </li>
