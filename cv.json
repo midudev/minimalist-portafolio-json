@@ -212,5 +212,26 @@
       "language": "German",
       "fluency": "Intermediate"
     }
+  ],
+  "projects": [
+    {
+      "name": "PackExpress System",
+      "isActive": true,
+      "description": "An invoicing and delivery system using ASP.NET, C#, and barcodes.",
+      "highlights": [
+        "Developed the entire system from scratch.",
+        "Incorporated QR codes and barcodes for tracking."
+      ],
+      "url": "https://www.packexpress.com.uy"
+    },
+    {
+      "name": "ECOMAVI Web Development",
+      "isActive": true,
+      "description": "Developed websites and managed network systems for ECOMAVI.",
+      "highlights": [
+        "Reduced website load times by 40%.",
+        "Improved network security."
+      ]
+    }
   ]
 }
