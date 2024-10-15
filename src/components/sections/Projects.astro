@@ -5,18 +5,22 @@ import Section from "../Section.astro";
 import { projects } from "@cv";
 ---
 
+---
+
 <Section title="Proyectos">
   <ul>
     {
       projects.map(
-        ({ url, description, highlights, name, isActive, github }: {
-          url: string;
-          description: string;
-          highlights: string[];
-          name: string;
-          isActive: boolean;
-          github?: string; // Mark github as optional
-        }) => {
+        (project) => {
+          const { url, description, highlights, name, isActive, github }: {
+            url: string;
+            description: string;
+            highlights: string[];
+            name: string;
+            isActive: boolean;
+            github?: string; // Mark github as optional
+          } = project;
+
           return (
             <li>
               <article>
@@ -41,7 +45,7 @@ import { projects } from "@cv";
                 </header>
                 <footer>
                   {highlights.map((highlight) => {
-                    return <span>{highlight}</span>
+                    return <span>{highlight}</span>;
                   })}
                 </footer>
               </article>
@@ -52,6 +56,9 @@ import { projects } from "@cv";
     }
   </ul>
 </Section>
+
+
+
 
 <style>
   ul {
