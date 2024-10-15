@@ -2,21 +2,22 @@
 import GitHub from "@/icons/GitHub.astro";
 import Section from "../Section.astro";
 import { projects } from "@cv";
+interface Project {
+  url: string; // Ensure this is always defined
+  description: string;
+  highlights: string[];
+  name: string;
+  isActive: boolean;
+  github?: string; // Optional property
+}
 ---
 
 <Section title="Proyectos">
   <ul>
     {
       projects.map(
-        (project) => {
-          const { url, description, highlights, name, isActive, github }: {
-            url: string;
-            description: string;
-            highlights: string[];
-            name: string;
-            isActive: boolean;
-            github?: string; // Make github optional
-          } = project;
+        (project: Project) => {
+          const { url, description, highlights, name, isActive, github } = project;
 
           return (
             <li>
@@ -53,7 +54,6 @@ import { projects } from "@cv";
     }
   </ul>
 </Section>
-
 <style>
   ul {
     display: grid;
