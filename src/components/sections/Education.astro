@@ -13,6 +13,8 @@ import { education } from "@cv"
           endDate != null ? new Date(endDate).getFullYear() : "Actual"
         const years = `${startYear} - ${endYear}`
 
+        const years = startYear === endYear ? `${startYear}` : `${startYear} - ${endYear}`;
+
         return (
           <li>
             <article>
